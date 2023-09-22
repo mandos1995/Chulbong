@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		EEAE0F3C2ABD694600296C64 /* ChulBongApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE0F3B2ABD694600296C64 /* ChulBongApp.swift */; };
-		EEAE0F3E2ABD694600296C64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE0F3D2ABD694600296C64 /* ContentView.swift */; };
 		EEAE0F402ABD694900296C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAE0F3F2ABD694900296C64 /* Assets.xcassets */; };
 		EEAE0F432ABD694900296C64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAE0F422ABD694900296C64 /* Preview Assets.xcassets */; };
 		EEAE0F4B2ABD6ABD00296C64 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = EEAE0F4A2ABD6ABD00296C64 /* ComposableArchitecture */; };
+		EEAE0F522ABD707A00296C64 /* ChulBongSPM in Frameworks */ = {isa = PBXBuildFile; productRef = EEAE0F512ABD707A00296C64 /* ChulBongSPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEAE0F382ABD694600296C64 /* ChulBong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChulBong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAE0F3B2ABD694600296C64 /* ChulBongApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChulBongApp.swift; sourceTree = "<group>"; };
-		EEAE0F3D2ABD694600296C64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEAE0F3F2ABD694900296C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEAE0F422ABD694900296C64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEAE0F4F2ABD6F4900296C64 /* ChulBongSPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ChulBongSPM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +28,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAE0F4B2ABD6ABD00296C64 /* ComposableArchitecture in Frameworks */,
+				EEAE0F522ABD707A00296C64 /* ChulBongSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,8 +38,10 @@
 		EEAE0F2F2ABD694600296C64 = {
 			isa = PBXGroup;
 			children = (
+				EEAE0F4F2ABD6F4900296C64 /* ChulBongSPM */,
 				EEAE0F3A2ABD694600296C64 /* ChulBong */,
 				EEAE0F392ABD694600296C64 /* Products */,
+				EEAE0F502ABD707A00296C64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				EEAE0F3B2ABD694600296C64 /* ChulBongApp.swift */,
-				EEAE0F3D2ABD694600296C64 /* ContentView.swift */,
 				EEAE0F3F2ABD694900296C64 /* Assets.xcassets */,
 				EEAE0F412ABD694900296C64 /* Preview Content */,
 			);
@@ -67,6 +69,13 @@
 				EEAE0F422ABD694900296C64 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEAE0F502ABD707A00296C64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +96,7 @@
 			name = ChulBong;
 			packageProductDependencies = (
 				EEAE0F4A2ABD6ABD00296C64 /* ComposableArchitecture */,
+				EEAE0F512ABD707A00296C64 /* ChulBongSPM */,
 			);
 			productName = ChulBong;
 			productReference = EEAE0F382ABD694600296C64 /* ChulBong.app */;
@@ -145,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEAE0F3E2ABD694600296C64 /* ContentView.swift in Sources */,
 				EEAE0F3C2ABD694600296C64 /* ChulBongApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +380,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EEAE0F492ABD6ABD00296C64 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		EEAE0F512ABD707A00296C64 /* ChulBongSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChulBongSPM;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

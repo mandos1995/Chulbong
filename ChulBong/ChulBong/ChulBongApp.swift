@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ChulBongSPM
 
 @main
 struct ChulBongApp: App {
