@@ -29,6 +29,7 @@
 		EEAE0F4F2ABD6F4900296C64 /* ChulBongSPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ChulBongSPM; sourceTree = "<group>"; };
 		EEAE0F532ABD777E00296C64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EEAE0F602ABD7EE200296C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEAE0F622ABD8BFE00296C64 /* ChulBong.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChulBong.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 		EEAE0F3A2ABD694600296C64 /* ChulBong */ = {
 			isa = PBXGroup;
 			children = (
+				EEAE0F622ABD8BFE00296C64 /* ChulBong.entitlements */,
 				EEAE0F532ABD777E00296C64 /* GoogleService-Info.plist */,
 				EEAE0F3B2ABD694600296C64 /* ChulBongApp.swift */,
 				EEAE0F3F2ABD694900296C64 /* Assets.xcassets */,
@@ -310,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChulBong/ChulBong.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChulBong/Preview Content\"";
@@ -340,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChulBong/ChulBong.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChulBong/Preview Content\"";
