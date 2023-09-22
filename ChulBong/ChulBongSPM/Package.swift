@@ -12,14 +12,23 @@ let package = Package(
             name: "ChulBongSPM",
             type: .static,
             targets: ["ChulBongSPM"]),
+        .library(
+            name: "CBLoginSPM",
+            type: .static,
+            targets: ["CBLoginSPM"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "ChulBongSPM"),
+            name: "ChulBongSPM",
+            dependencies: ["CBLoginSPM"]
+        ),
         .testTarget(
             name: "ChulBongSPMTests",
             dependencies: ["ChulBongSPM"]),
+        
+        // Login
+        .target(name: "CBLoginSPM")
     ]
 )
