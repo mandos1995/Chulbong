@@ -19,11 +19,17 @@ let package = Package(
         .library(
             name: "CBLoginSPM",
             type: .static,
-            targets: ["CBLoginSPM"])
+            targets: ["CBLoginSPM"]),
+        .library(
+            name: "CBMapSPM",
+            type: .static,
+            targets: ["CBMapSPM"]
+        )
     ],
     dependencies: [
         .package(url: "https://github.com/pointfreeco/swift-composable-architecture", from: "1.2.0"),
-        .package(url: "https://github.com/firebase/firebase-ios-sdk", from: "10.15.0")
+        .package(url: "https://github.com/firebase/firebase-ios-sdk", from: "10.15.0"),
+        .package(url: "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM", from: "2.6.1")
     ],
     
     targets: [
@@ -37,7 +43,6 @@ let package = Package(
             name: "ChulBongSPMTests",
             dependencies: ["ChulBongSPM"]
         ),
-        
         .target(
             name: "CBCommonSPM",
             dependencies: [
@@ -47,15 +52,18 @@ let package = Package(
                 )
             ]
         ),
-        // Login
         .target(
             name: "CBLoginSPM",
             dependencies: [
                 "CBCommonSPM",
                 .product(name: "FirebaseAuth", package: "firebase-ios-sdk")
             ]
+        ),
+        .target(
+            name: "CBMapSPM",
+            dependencies: [
+                .product(name: "KakaoMapsSDK_SPM", package: "KakaoMapsSDK-SPM")
+            ]
         )
-        
-        
     ]
 )
