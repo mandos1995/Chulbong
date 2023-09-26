@@ -7,8 +7,13 @@
 
 import SwiftUI
 import AuthenticationServices
+import CryptoKit
+
+import FirebaseAuth
 
 public struct LoginView: View {
+    @Environment(\.window) var window: UIWindow?
+    @State private var appleLoginCoordinator: AppleAuthCoordinator?
     
     public init() { }
     
@@ -21,9 +26,7 @@ public struct LoginView: View {
     }
     
     private func showAppleLogin() {
-        let request = ASAuthorizationAppleIDProvider().createRequest()
-        request.requestedScopes = [.email, .fullName]
-        let controller = ASAuthorizationController(authorizationRequests: [request])
-        controller.performRequests()
+        appleLoginCoordinator = AppleAuthCoordinator(window: window)
+        appleLoginCoordinator?.startAppleLogin()
     }
 }
