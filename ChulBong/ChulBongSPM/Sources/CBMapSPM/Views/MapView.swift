@@ -9,9 +9,15 @@ import SwiftUI
 
 import KakaoMapsSDK
 
-struct MapView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+public struct MapView: View {
+    @State private var draw: Bool = false
+    public init() { }
+    
+    public var body: some View {
+        KakaoMapView(draw: $draw)
+            .onAppear { self.draw = true }
+            .onDisappear { self.draw = false }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .ignoresSafeArea()
     }
 }
-

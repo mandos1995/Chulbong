@@ -7,12 +7,13 @@
 
 import SwiftUI
 import CBLoginSPM
+import CBMapSPM
 
 public struct ContentView: View {
     
     public init() { }
     
     public var body: some View {
-        LoginView()
+        MapView()
     }
 }

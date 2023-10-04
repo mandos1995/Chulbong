@@ -22,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE1D0EDC2ACD444F004E15C1 /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
+		EE1D0EDD2ACD44CA004E15C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EE46C61C2AC2C2B100E25565 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EEAE0F382ABD694600296C64 /* ChulBong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChulBong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAE0F3B2ABD694600296C64 /* ChulBongApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChulBongApp.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE1D0EDB2ACD4426004E15C1 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				EE1D0EDC2ACD444F004E15C1 /* Secret.xcconfig */,
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
 		EEAE0F2F2ABD694600296C64 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +81,8 @@
 		EEAE0F3A2ABD694600296C64 /* ChulBong */ = {
 			isa = PBXGroup;
 			children = (
+				EE1D0EDD2ACD44CA004E15C1 /* Info.plist */,
+				EE1D0EDB2ACD4426004E15C1 /* Secret */,
 				EEAE0F3B2ABD694600296C64 /* ChulBongApp.swift */,
 				EEAE0F3F2ABD694900296C64 /* Assets.xcassets */,
 				EEAE0F412ABD694900296C64 /* Preview Content */,
@@ -187,6 +199,7 @@
 /* Begin XCBuildConfiguration section */
 		EEAE0F442ABD694900296C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1D0EDC2ACD444F004E15C1 /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -250,6 +263,7 @@
 		};
 		EEAE0F452ABD694900296C64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1D0EDC2ACD444F004E15C1 /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -306,6 +320,7 @@
 		};
 		EEAE0F472ABD694900296C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1D0EDC2ACD444F004E15C1 /* Secret.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +331,7 @@
 				DEVELOPMENT_TEAM = H2N9KXXP3M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChulBong/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +353,7 @@
 		};
 		EEAE0F482ABD694900296C64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1D0EDC2ACD444F004E15C1 /* Secret.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,6 +364,7 @@
 				DEVELOPMENT_TEAM = H2N9KXXP3M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChulBong/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
