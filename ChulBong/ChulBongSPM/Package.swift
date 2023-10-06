@@ -49,6 +49,14 @@ let package = Package(
                 .product(
                     name: "ComposableArchitecture",
                     package: "swift-composable-architecture"
+                ),
+                .product(
+                    name: "FirebaseFirestore",
+                    package: "firebase-ios-sdk"
+                ),
+                .product(
+                    name: "FirebaseFirestoreSwift",
+                    package: "firebase-ios-sdk"
                 )
             ]
         ),
@@ -62,6 +70,7 @@ let package = Package(
         .target(
             name: "CBMapSPM",
             dependencies: [
+                "CBCommonSPM",
                 .product(name: "KakaoMapsSDK_SPM", package: "KakaoMapsSDK-SPM")
             ]
         )

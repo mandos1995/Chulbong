@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>KAKAO_APP_KEY</key>
-	<string>09bc2505ebe093695068a3cc6b42daf4</string>
+	<string>$(KAKAO_APP_KEY)</string>
 </dict>
 </plist>
